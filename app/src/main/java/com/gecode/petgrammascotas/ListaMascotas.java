@@ -2,14 +2,12 @@ package com.gecode.petgrammascotas;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -34,7 +32,7 @@ public class ListaMascotas extends AppCompatActivity {
 
         inicializarDatos();
         inicializarAdaptador();
-        agregarFAB();
+
     }
 
 
@@ -74,16 +72,7 @@ public class ListaMascotas extends AppCompatActivity {
         return true;
     }
 
-    // Accion del boton Camara, solo nos muestra un mensaje por el momento.
-    public void agregarFAB(){
-        FloatingActionButton mFAB = (FloatingActionButton) findViewById(R.id.FAB_Camera);
-        mFAB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getBaseContext(),getResources().getString(R.string.btn_subir),Toast.LENGTH_LONG).show();
-            }
-        });
-    }
+
 
 
 }

@@ -1,10 +1,12 @@
 package com.gecode.petgrammascotas;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -23,6 +25,7 @@ public class MascotasFavoritas extends AppCompatActivity {
         listadoMascotas.setLayoutManager( llm );
         inicializarListaMascotas();
         inicializarAdaptador();
+        agregarFAB();
     }
 
     // DataSet: Cargamos los datos que queremos mostrar
@@ -43,6 +46,17 @@ public class MascotasFavoritas extends AppCompatActivity {
     // Retorna a la Primera Activida al dar Click en el boton retroceso
     public  void  irPrimeraActividad (View v) {
         finish();
+    }
+
+    // Accion del boton Camara, solo nos muestra un mensaje por el momento.
+    public void agregarFAB(){
+        FloatingActionButton mFAB = (FloatingActionButton) findViewById(R.id.FAB_Camera);
+        mFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getBaseContext(),getResources().getString(R.string.btn_subir),Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 
