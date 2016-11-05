@@ -4,7 +4,7 @@
 > - Java Mail: Libreria javamail
 
 ## Agragando Menus
-** 1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” **
+**1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” **
 
 ### xml: Menu de Opciones
 ```xml
