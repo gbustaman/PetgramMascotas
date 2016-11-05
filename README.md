@@ -3,10 +3,10 @@
 > - Fragmnet: Adapter, View Holder, Libreria CircularImageView
 > - Java Mail: Libreria javamail
 
-## Agragando Menus
-1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” 
+## Agregando Menus
+### Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” 
 
-### Xml: Menu de Opciones
+** Xml: Menu de Opciones **
 ```xml
     <menu
       xmlns:android="http://schemas.android.com/apk/res/android">
