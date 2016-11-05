@@ -46,5 +46,5 @@ public class ListaMascotas extends AppCompatActivity {
 }
 ````
 - Resultado
-<img src="/gif/imagen1.gif" width="280px"/>
+<img src="/imagen1.gif" width="280px"/>
 
