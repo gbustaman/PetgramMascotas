@@ -6,7 +6,7 @@
 ## Agragando Menus
 ** 1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” **
 
-- xml: Menu de Opciones
+### xml: Menu de Opciones
 ```xml
     <menu
       xmlns:android="http://schemas.android.com/apk/res/android">
@@ -22,7 +22,7 @@
       </item>
     </menu>
 ```
-- java: Creamos un menú a nuestra aplicacion Principal.
+### java: Creamos un menú a nuestra aplicacion Principal.
 ````java
 public class ListaMascotas extends AppCompatActivity {
     @Override
@@ -45,6 +45,6 @@ public class ListaMascotas extends AppCompatActivity {
     }
 }
 ````
-- Resultado
-<img src="/imagen1.gif" width="280px"/>
+### Resultado
+<img src="imagen1.gif" width="270" height="480"/>
 
