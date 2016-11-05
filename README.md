@@ -45,6 +45,7 @@ public class ListaMascotas extends AppCompatActivity {
     }
 }
 ````
+
 ### Resultado
 <img src="imagen1.gif" width="270" height="480"/>
 
@@ -85,4 +86,36 @@ public class Contacto extends AppCompatActivity implements View.OnClickListener{
     }
 }
 ````
+
+#### About.java [https://github.com/gbustaman/PetgramMascotas/blob/master/app/src/main/java/com/gecode/petgrammascotas/menu/About.java]
+````java
+public class About extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about);
+
+    }
+
+    public void irHome (View v){
+        finish();
+    }
+}
+````
+#### Uso de la Libreria javaMail
+- Importamos atraves de gradle en dependencias las librerias de javamail
+
+```
+    compile 'com.sun.mail:android-mail:1.5.5'
+    compile 'com.sun.mail:android-activation:1.5.5'
+```
+
+- En el enlace siguiente encotraremos la configuración de javamail para enviar un comentario al contacto [https://github.com/gbustaman/PetgramMascotas/blob/master/app/src/main/java/com/gecode/petgrammascotas/mail/EnviarMail.java]
+
+### Resultado
+<img src="imagen2.gif" width="270" height="480"/>
+
+
+
 
