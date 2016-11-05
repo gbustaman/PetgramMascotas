@@ -4,9 +4,9 @@
 > - Java Mail: Libreria javamail
 
 ## Agragando Menus
-1.* Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” *
+1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” 
 
-### xml: Menu de Opciones
+### Xml: Menu de Opciones
 ```xml
     <menu
       xmlns:android="http://schemas.android.com/apk/res/android">
@@ -22,7 +22,7 @@
       </item>
     </menu>
 ```
-### java: Creamos un menú a nuestra aplicacion Principal.
+### Java: Creamos un menú a nuestra aplicacion Principal.
 ````java
 public class ListaMascotas extends AppCompatActivity {
     @Override
@@ -47,4 +47,8 @@ public class ListaMascotas extends AppCompatActivity {
 ````
 ### Resultado
 <img src="imagen1.gif" width="270" height="480"/>
+
+2. Contacto deberá:
+> - Llevarte a una pantalla con un formulario en el que solicites el nombre, el correo y su mensaje (utiliza los EditText de Material Design),
+> - Además habrá un botón de “Enviar Comentario” el cual tomará la información recopilada y con ayuda de la librería JavaMail envíe un mail con el comentario del contacto.
 
