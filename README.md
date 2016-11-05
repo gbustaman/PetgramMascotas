@@ -6,7 +6,8 @@
 ## Agragando Menus
 ** 1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” **
 
-``` xml Menu de Opciones
+- xml  Menu de Opciones
+```
     <menu
       xmlns:android="http://schemas.android.com/apk/res/android">
       <!-- Menu Contacto: Enviar Email -->
@@ -21,16 +22,14 @@
       </item>
     </menu>
 ```
-
-```javaCreamos un menú a nuestra aplicacion Principal.
+- java: Creamos un menú a nuestra aplicacion Principal.
+```
     public class ListaMascotas extends AppCompatActivity {
-
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
             getMenuInflater().inflate(R.menu.menu_opciones,menu);
             return true;
         }
-
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
             switch (item.getItemId()){
