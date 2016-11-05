@@ -1,6 +1,7 @@
-package com.gecode.petgrammascotas;
+package com.gecode.petgrammascotas.adapter;
 
 import android.app.Activity;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.gecode.petgrammascotas.R;
+import com.gecode.petgrammascotas.pojo.Mascota;
 
 import java.util.ArrayList;
 
@@ -43,7 +46,11 @@ public class AdapterMascota extends RecyclerView.Adapter<AdapterMascota.MascotaV
         holder.btnLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity,"Diste like a " + mascota.getNombreMascota(),Toast.LENGTH_SHORT).show();
+
+                mascota.setRaiting(String.valueOf(Integer.parseInt(mascota.getRaiting()) + 1));
+                notifyDataSetChanged();
+                Snackbar.make(v,"Diste like a " + mascota.getNombreMascota(), Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 

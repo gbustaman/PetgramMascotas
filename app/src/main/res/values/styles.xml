@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/textIcons</item>
         <item name="android:icon">@drawable/cat_footprint_filled</item>
+
+    </style>
+    
+    <style name="BotonEnviar" parent="AlertDialog.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/textIcons</item>
+
+
     </style>
 
 </resources>

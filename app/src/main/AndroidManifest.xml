@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gecode.petgrammascotas">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,17 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MascotasFavoritas"
-            android:parentActivityName=".ListaMascotas"
-            >
-            <!--Soporte para versiones 4.0 o menos -->
+        <activity
+            android:name=".MascotasFavoritas"
+            android:parentActivityName=".ListaMascotas">
+
+            <!-- Soporte para versiones 4.0 o menos -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ListaMascotas"
-                >
-            </meta-data>
-
+                android:value=".ListaMascotas" />
         </activity>
+        <activity android:name=".menu.Contacto" />
+        <activity android:name=".menu.About"></activity>
     </application>
 
 </manifest>

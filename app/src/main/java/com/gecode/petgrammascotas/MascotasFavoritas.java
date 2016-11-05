@@ -2,11 +2,15 @@ package com.gecode.petgrammascotas;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
+
+import com.gecode.petgrammascotas.adapter.AdapterMascota;
+import com.gecode.petgrammascotas.pojo.Mascota;
 
 import java.util.ArrayList;
 
@@ -18,6 +22,11 @@ public class MascotasFavoritas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mascotas_favoritas);
+
+        Toolbar toolPersonalizado = (Toolbar) findViewById(R.id.abFavotito);
+        setSupportActionBar(toolPersonalizado);
+
+
 
         listadoMascotas = (RecyclerView) findViewById( R.id.rvMascota );
         LinearLayoutManager llm = new LinearLayoutManager( this );
@@ -54,7 +63,8 @@ public class MascotasFavoritas extends AppCompatActivity {
         mFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getBaseContext(),getResources().getString(R.string.btn_subir),Toast.LENGTH_LONG).show();
+                Snackbar.make(v,getString(R.string.floating_mensaje), Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
     }

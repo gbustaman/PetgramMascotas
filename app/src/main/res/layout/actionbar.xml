@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbarListado"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
+    android:minHeight="?attr/actionBarSize"
     android:background="@color/colorPrimary"
-    android:elevation="@dimen/elevacion_actinbar"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways"
 
     >
 
@@ -21,6 +23,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/cat_footprint_filled"
             android:layout_gravity="center_vertical"
+            android:layout_column="0"
+            android:layout_row="0"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -31,6 +35,8 @@
             android:textColor="@color/textIcons"
             android:textStyle="bold"
             android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_column="1"
+            android:layout_row="0"
             />
         <ImageView
             android:layout_width="wrap_content"
@@ -38,8 +44,9 @@
             android:src="@drawable/star_hotel"
             android:onClick="irSegundaActividad"
             android:foregroundGravity="center_vertical"
-            android:layout_gravity="end"
-            android:layout_marginRight="@dimen/text_margin_rigth"/>
+            android:layout_column="3"
+            android:layout_row="0"
+            android:layout_marginRight="@dimen/text_margin_right"/>
 
     </GridLayout>
 
