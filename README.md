@@ -52,7 +52,7 @@ public class ListaMascotas extends AppCompatActivity {
 > - Llevarte a una pantalla con un formulario en el que solicites el nombre, el correo y su mensaje (utiliza los EditText de Material Design),
 > - Además habrá un botón de “Enviar Comentario” el cual tomará la información recopilada y con ayuda de la librería JavaMail envíe un mail con el comentario del contacto.
 
-#### Contacto.java
+#### Contacto.java [https://github.com/gbustaman/PetgramMascotas/blob/master/app/src/main/java/com/gecode/petgrammascotas/menu/Contacto.java]
 
 ````java
 public class Contacto extends AppCompatActivity implements View.OnClickListener{
