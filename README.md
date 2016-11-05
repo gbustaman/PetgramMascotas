@@ -114,7 +114,7 @@ public class About extends AppCompatActivity {
 - En el enlace siguiente encotraremos la configuración de javamail para enviar un comentario al contacto [https://github.com/gbustaman/PetgramMascotas/blob/master/app/src/main/java/com/gecode/petgrammascotas/mail/EnviarMail.java]
 
 ### Resultado
-<img src="imagen2.gif" width="270" height="480"/>
+<img src="imagen2.gif" width="620" height="480"/>
 
 
 
