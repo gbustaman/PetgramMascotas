@@ -7,7 +7,7 @@
 ** 1. Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” **
 
 - xml  Menu de Opciones
-```
+```xml
     <menu
       xmlns:android="http://schemas.android.com/apk/res/android">
       <!-- Menu Contacto: Enviar Email -->
@@ -23,26 +23,28 @@
     </menu>
 ```
 - java: Creamos un menú a nuestra aplicacion Principal.
-```
-    public class ListaMascotas extends AppCompatActivity {
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            getMenuInflater().inflate(R.menu.menu_opciones,menu);
-            return true;
-        }
-        @Override
-        public boolean onOptionsItemSelected(MenuItem item) {
-            switch (item.getItemId()){
-                case R.id.mContacto:
-                    Intent intent1 = new Intent(this, Contacto.class);
-                    startActivity(intent1);
-                    break;
-                case R.id.mAbout:
-                    Intent intent2 = new Intent(this, About.class);
-                    startActivity(intent2);
-                    break;
-            }return super.onOptionsItemSelected(item);
-        }
+**3. Your Fragment should extend SupportFragment：**
+`java
+public class ListaMascotas extends AppCompatActivity {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_opciones,menu);
+        return true;
     }
-```
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mContacto:
+                Intent intent1 = new Intent(this, Contacto.class);
+                startActivity(intent1);
+                break;
+            case R.id.mAbout:
+                Intent intent2 = new Intent(this, About.class);
+                startActivity(intent2);
+                break;
+        }return super.onOptionsItemSelected(item);
+    }
+}
+``
+
 
