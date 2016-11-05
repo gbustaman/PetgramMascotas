@@ -24,7 +24,7 @@
 ```
 - java: Creamos un menú a nuestra aplicacion Principal.
 **3. Your Fragment should extend SupportFragment：**
-`java
+````java
 public class ListaMascotas extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -45,6 +45,6 @@ public class ListaMascotas extends AppCompatActivity {
         }return super.onOptionsItemSelected(item);
     }
 }
-``
+````
 
 
