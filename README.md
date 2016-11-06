@@ -9,7 +9,7 @@ Seman 4: Menus y Fragment
 
 # DEMO
 
-<img src="petagram.gif" alt="sample" title="sample" width="300" height="435" align="right" vspace="52"/>
+<img src="petagram.gif" alt="sample" title="sample" width="300" height="480" align="right" vspace="52"/>
 
 ## Agregando Menus
 - Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” 
