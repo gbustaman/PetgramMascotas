@@ -241,5 +241,28 @@ private void setUpViewPager(){
 ### Resultado del Fragment Principal 
 <img src="imagen4.gif" width="270" height="480"/>
 
+### CircularImageView
+- Se uso la libreria de lopspower/CircularImageView
+
+#### Uso de la Libreria CircularImageView
+```
+compile 'com.mikhaellopez:circularimageview:3.0.2'
+```
+#### Codigo XML
+```xml
+<com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/civPerfilMascota"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/mascota_19_2"
+                    android:layout_gravity="center"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="6dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="1"
+                    app:civ_shadow_color="#8BC34A"/>
+```
+
 
 
