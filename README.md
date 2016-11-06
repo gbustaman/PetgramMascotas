@@ -116,6 +116,118 @@ public class About extends AppCompatActivity {
 ### Resultado
 <img src="imagen2.gif" height="480"/>
 
+## Fragments
+- Modulariza el proyecto anterior en Fragments para que estos puedan ser mostrados en un ViewPager.
+#### Configuramos los Fragments utilizados para este proyecto.
+
+- ListadoMascotas.java
+````java
+private ArrayList <Fragment> agregarFragments(){
+    ArrayList<Fragment> fragments = new ArrayList<>();
+    fragments.add(new RecycleViewFragment());
+    fragments.add(new FragmentPerfil());
+    return fragments;
+}
+private void setUpViewPager(){
+    viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(),agregarFragments()));
+    tabLayout.setupWithViewPager(viewPager);
+    tabLayout.getTabAt(0).setIcon(R.drawable.ic_home);
+    tabLayout.getTabAt(1).setIcon(R.drawable.ic_action_name);
+
+}
+````
+
+- en este elace encontraras los codigos de los Fragmnets utilizados para este proyecto. 
+[https://github.com/gbustaman/PetgramMascotas/tree/master/app/src/main/java/com/gecode/petgrammascotas/fragment]
+
+- Código XML: Fragment del Perfil 
+```xml
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/civPerfilMascota"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/mascota_19_2"
+                    android:layout_gravity="center"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="6dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="1"
+                    app:civ_shadow_color="#8BC34A"/>
+
+                <TextView
+                    android:id="@+id/tvNombrePerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/text_titulo_size"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/layout_margin_top"
+                    android:text="@string/name_default"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_fragment_perfil"
+                    android:layout_marginTop="@dimen/layout_margin_vertical"
+                    android:layout_marginBottom="@dimen/layout_margin_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/dividerColor" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPerfilMascota"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/text_padding_right"/>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/grid_bottom"
+            android:padding="@dimen/grid_rigth">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/FAB_Camera_Perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:background="@color/colorPrimaryLight"
+                    android:src="@drawable/camera_filled_50_blanco"
+                    />
+        </GridLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+```
+
+- Codigo XML: Fragment Principal
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMascota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+</LinearLayout>
+```
+
 
 
 
