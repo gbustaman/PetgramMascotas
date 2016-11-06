@@ -3,6 +3,10 @@
 > - Fragmnet: Adapter, View Holder, Libreria CircularImageView
 > - Java Mail: Libreria javamail
 
+# DEMO
+
+<img src="petagram.gif" width="270" height="480"/>
+
 ## Agregando Menus
 - Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” 
 
@@ -22,7 +26,9 @@
       </item>
     </menu>
 ```
+
 ### Java: Creamos un menú a nuestra aplicacion Principal.
+
 ````java
 public class ListaMascotas extends AppCompatActivity {
     @Override
@@ -213,6 +219,10 @@ private void setUpViewPager(){
 </android.support.design.widget.CoordinatorLayout>
 ```
 
+### Resultado del Fragment_Perfil
+<img src="imagen3.gif" width="270" height="480"/>
+
+
 - Codigo XML: Fragment Principal
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -228,6 +238,8 @@ private void setUpViewPager(){
 </LinearLayout>
 ```
 
+### Resultado del Fragment Principal 
+<img src="imagen4.gif" width="270" height="480"/>
 
 
 
