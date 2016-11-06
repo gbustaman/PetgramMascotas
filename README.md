@@ -4,7 +4,7 @@ Seman 4: Menus y Fragment
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
 
 
-<img src="petagram.gif" alt="sample" title="sample" width="300" height="480" align="right" vspace="52"/>
+<img src="petagram.gif" alt="sample" title="sample" width="270" height="480" align="right" vspace="52"/>
 > - Menus: 
 > - Fragmnet: Adapter, View Holder, Libreria CircularImageView
 > - Java Mail: Libreria javamail
