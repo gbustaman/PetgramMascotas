@@ -3,13 +3,14 @@ Seman 4: Menus y Fragment
 [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
 [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
 
+
+<img src="petagram.gif" alt="sample" title="sample" width="300" height="480" align="right" vspace="52"/>
 > - Menus: 
 > - Fragmnet: Adapter, View Holder, Libreria CircularImageView
 > - Java Mail: Libreria javamail
 
 # DEMO
 
-<img src="petagram.gif" alt="sample" title="sample" width="300" height="480" align="right" vspace="52"/>
 
 ## Agregando Menus
 - Crea un menú de opciones que muestre el Item “Contacto” y el Item “Acerca De” 
