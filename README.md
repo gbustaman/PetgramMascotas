@@ -124,6 +124,18 @@ public class About extends AppCompatActivity {
 
 - En el enlace siguiente encotraremos la configuración de javamail para enviar un comentario al contacto [https://github.com/gbustaman/PetgramMascotas/blob/master/app/src/main/java/com/gecode/petgrammascotas/mail/EnviarMail.java]
 
+#### Para enviar un mensaje al contacto deben ingresar su cuenta de gmail y su contraseña 
+
+- En el archivo EnviarMail.java ingresamos nuestros datos, cabe aclarar que para enviar un comentario tienen que configurar su gmail "Permitir que aplicaciones menos seguras accedan a tu cuenta" 
+
+````java
+public class EnviarMail extends AsyncTask<Void,Void,Void> {
+    
+    private String usuario = ""; // Introdusca su cuenta de gmail.
+    private String passwordUsuario = ""; // Indrodusca su contraseña.
+}
+````
+
 ### Resultado
 <img src="imagen2.gif" height="480"/>
 
